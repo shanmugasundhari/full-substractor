@@ -1,1 +1,10 @@
-# full-substractor
+module fulsub(a,b,c,d,y);
+input a,b,c;
+output d,y;
+wire e,f,g,h;
+not (e,a);
+and (f,b,e);
+and (g,e,b);
+and (h,b,c);
+or (y,f,g,h);
+end module
